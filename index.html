@@ -12,23 +12,23 @@
 <body>
     <header>
         <a href="#" class="logo">Portfolio</a>
-        <div class="toggle"></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
-    <section class="banner">
+    <section class="banner" id="home">
         <div class="textBx">
             <h2>Hello, I'm <br><span>Buck Pendleton.</span></h2>
             <h3>I'm a Web Developer</h3>
-            <a href="#" class="btn">About me</a>
+            <a href="#about" class="btn">About me</a>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="heading">
             <h2>About Me</h2>
         </div>
@@ -42,7 +42,7 @@
         </div>
     </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="heading white">
             <h2>My Services</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -59,14 +59,14 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores commodi adipisci distinctio dolorum dignissimos magni corporis ad perspiciatis consequatur aspernatur facilis.</p>
             </div>
             <div class="servicesBx">
-                <img src="https://www.flaticon.com/svg/vstatic/svg/4392/4392754.svg?token=exp=1616129072~hmac=d7059045283e9de4f8873299ee49494b" width="100" height="100">
+                <img src="https://www.flaticon.com/svg/vstatic/svg/4392/4392788.svg?token=exp=1616136621~hmac=5541b062d423ce72a95280b65480b107" width="100" height="100">
                 <h2>Video Editing</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores commodi adipisci distinctio dolorum dignissimos magni corporis ad perspiciatis consequatur aspernatur facilis.</p>
             </div>
         </div>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
         <div class="heading">
             <h2>My Latest Work</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -93,8 +93,8 @@
         </div>
     </section>
 
-    <section class="contact">
-        <div class="heading">
+    <section class="contact" id="contact">
+        <div class="heading white">
             <h2>Contact Me</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </div>
@@ -106,21 +106,36 @@
                     <div class="icon">
                         <i class="fa fa-phone"></i>
                     </div>
-                    <div class="text"></div>
+                    <div class="text">
                     <h3>Phone</h3>
                     <p>706-825-8040</p>
+                </div>
                 </div>
                 <div class="box">
                     <div class="icon">
                         <i class="fa fa-envelope"></i>
                     </div>
-                    <div class="text"></div>
+                    <div class="text">
                     <h3>Email</h3>
                     <p>buckpendleton@gmail.com</p>
                 </div>
                 </div>
+                </div>
             </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div> 
         </div>
     </section>
+
+    <div class="copyright">
+        <p>Copyright © 2021 Buck Pendleton. All Rights Reserved.</p>
+    </div>
 </body>
 </html>
